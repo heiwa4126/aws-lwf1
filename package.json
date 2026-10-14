@@ -11,7 +11,11 @@
 		"typecheck": "bun check",
 		"check": "bun check",
 		"lint": "tsc --noEmit",
-		"format": "oxfmt"
+		"format": "oxfmt",
+		"login": "aws login",
+		"login-remote": "aws login --remote",
+		"deploy": "aws lambda-web deploy --name aws-lwf1 --code ./dist",
+		"delete": "aws lambda-web delete-web-function --function-name aws-lwf1"
 	},
 	"dependencies": {
 		"express": "^5.3.0"

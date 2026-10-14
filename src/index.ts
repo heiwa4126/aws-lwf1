@@ -1,3 +1,6 @@
+// https://aws.amazon.com/blogs/aws/announcing-aws-lambda-web-functions-for-fast-consistent-web-app-performance-anywhere/
+// のサンプルコードほぼそのまま。TypeScriptで通らない部分を修正
+
 import express from "express";
 
 const app = express();
