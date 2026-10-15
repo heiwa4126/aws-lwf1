@@ -45,6 +45,29 @@ bun run build
 bun run preview
 ```
 
+## 内容
+
+[Announcing AWS Lambda Web Functions | AWS News Blog](https://aws.amazon.com/jp/blogs/aws/announcing-aws-lambda-web-functions-for-fast-consistent-web-app-performance-anywhere/)
+のサンプルコードほぼそのまま ([src/index.ts](./src/index.ts))。
+
+TypeScript で通らない部分を修正してあります。
+
+## ローカルでの実行例
+
+```console
+$ bun start
+
+Server running on http://localhost:3000
+```
+
+で、<http://localhost:3000> をブラウザや curl で開いてください。
+
+```console
+$ curl http://localhost:3000
+
+{"message":"Hello from Lambda Web Functions!"}
+```
+
 ## AWSへデプロイ
 
 ```bash
